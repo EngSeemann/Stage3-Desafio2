@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --bgc-header: hsl(218, 17%, 62%);
+  --bgc-h1: hsl(275, 18%, 79%);
+  --bgc-span: hsl(312, 91%, 96%);
+  --bgc-main: hsl(233, 100%, 97%);
+  --ff-text: 'Staatliches'; 
+  --ff-p: 'Palanquin';
+  --tc-h1: hsl(0, 0%, 100%);
+  --tc-p: hsl(274, 84%, 12%);
+  --tc-span: hsl(232, 17%, 35%);
+}
+
+.page {
+  text-align: center;
+}
+
+header {
+  background: var(--bgc-header);
+}
+
+h1 {
+  font-family: var(--ff-text);
+  font-size: 4rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.05em;
+  background: var(--bgc-h1);
+  color: var(--tc-h1);
+  text-shadow: 0px 2px 2px hsla(0, 0%, 0%, 0.25);
+}
+
+main {
+  background: var(--bgc-main);
+  width: 320px;
+  margin: 14px auto;
+  display: grid;
+}
+
+p {
+  font-family: var(--ff-p);
+  color: var(--tc-p);
+  font-size: 2.0rem;
+  line-height: 1.5rem;
+  padding-bottom: 6.0rem;
+}
+
+.card {
+  position: relative;
+  display: inline-block;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.card + .card {
+  margin-top: 3.0rem;
+}
+
+span {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-family: var(--ff-text);
+  font-size: 2.0rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.05em;
+  width: 112px;
+  height: 35px;
+  color: var(--tc-span);
+  background: var(--bgc-span);
+  border-radius: 20px;
+}
+
+@media (min-width: 500px) {
+  main {
+    width: auto;
+  }
+}
